@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/components/textfield.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,23 +23,10 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 'username',
               ),
-              const SizedBox(
-                height: 25,
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25.0),
-                child: TextField(
-                  decoration: InputDecoration(
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.grey),
-                      ),
-                      fillColor: Colors.white60,
-                      filled: true),
-                ),
-              ),
+              const SizedBox(height: 25),
+              Textfield(),
+              SizedBox(height: 25),
+              Textfield(),
             ],
           ),
         ),
