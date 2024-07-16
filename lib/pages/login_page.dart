@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:login/components/textfield.dart';
 
 class LoginPage extends StatefulWidget {
@@ -21,12 +22,21 @@ class _LoginPageState extends State<LoginPage> {
                 height: 50,
               ),
               Text(
-                'username',
+                'Login page',
               ),
-              const SizedBox(height: 25),
+              const SizedBox(height: 35),
               Textfield(),
-              SizedBox(height: 25),
+              SizedBox(height: 35),
               Textfield(),
+              const SizedBox(height: 35),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(onPressed: null, child: Text('Submit')),
+                  const SizedBox(height: 35),
+                  ElevatedButton(onPressed: null, child: Text('Back')),
+                ],
+              )
             ],
           ),
         ),
